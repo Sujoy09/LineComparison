@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LineComparisonUC3 {
+public class LineComparisonUC4 {
 	public static void main( String[] args ) {
 		Scanner sc = new Scanner(System.in);
 		int x1,y1,x2,y2;
@@ -26,17 +26,6 @@ public class LineComparisonUC3 {
 		y4=sc.nextInt();
 		Integer distofline2=(int)Math.sqrt((x3-x4)*(x3-x4) + (y3-y4)*(y3-y4));
 		int compareResult = distofline1.compareTo(distofline2);
-		if (compareResult > 0)
-		{
-			System.out.println("1st Line is greater than 2nd Line");
-		}
-		else if (compareResult == 0)
-		{
-			System.out.println("Both the lines are Equal");
-		}
-		else if (compareResult < 0)
-		{
-			System.out.println("1st Line is smaller than 2nd Line");
-		}
+		System.out.println("distofline1 & distanceofline2 comparison: "+compareResult);
 		}
 	}
